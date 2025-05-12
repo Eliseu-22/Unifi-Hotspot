@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Redefinir Senha - Portal de Acesso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/static/images/icone.png">
+  <link rel="stylesheet" href="/static/style.css">
+  </head>
+<body>
+  <div class="top-content">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1><strong>Portal de Acesso</strong> - Redefinir Senha</h1>
+            <div class="description">
+              <p style="color: white;">Digite seu e-mail para redefinir a senha.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top">
+              <div class="form-top-left">
+                <h3>Esqueci a senha</h3>
+                <p>Informe seu e-mail para receber uma nova senha.</p>
+              </div>
+              <div class="form-top-right">
+                </div>
+            </div>
+            <div class="form-bottom">
+              <form method="POST" action="/forgot" class="login-form">
+                <div class="form-group">
+                  <label class="sr-only" for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu email..." required>
+                </div>
+                <button type="submit" class="btn">Enviar nova senha</button>
+              </form>
+            </div>
+            <div class="text-muted single-line">
+              <br>
+              <p>Desenvolvido para projetos de código aberto.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
