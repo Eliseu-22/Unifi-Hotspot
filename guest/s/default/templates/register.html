@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro - Portal de Acesso Wi-Fi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/static/images/icone.png">
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+  </head>
+<body>
+  <div class="top-content">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1><strong>Cadastro de Acesso</strong> WI-FI Grátis</h1>
+            <div class="description">
+              <p>Cadastre-se e retorne à página inicial.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top">
+              <div class="form-top-left">
+                <h3>Cadastre-se</h3>
+                <p><strong>Por favor, preencha os campos obrigatórios abaixo.</strong></p>
+              </div>
+              <div class="form-top-right">
+                </div>
+            </div>
+            <div class="form-bottom">
+              <form method="POST" action="/register" class="login-form">
+                
+                <div class="form-group">
+                  <label class="sr-only" for="name">Nome completo</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nome completo..." required>
+                </div>
+                
+                <div class="form-group">
+                  <label class="sr-only" for="cellphone">Telefone</label>
+                  <input type="text" class="form-control" name="cellphone" id="cellphone" placeholder="Telefone..." required>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="password">Senha</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Senha..." required>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="username">Email</label>
+                  <input type="email" class="form-control" name="username" id="username" placeholder="Email..." required>
+                </div>
+
+                <input type="hidden" name="cpf" value="">
+                <input type="hidden" name="loja" value="">
+
+                <input type="submit" value="Cadastrar" class="cadastre-se-btn">
+              </form>
+            </div>
+            <div class="text-muted single-line">
+              <br>
+              <p>Desenvolvido para projetos de código aberto.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/valiform.js"></script>
+  </body>
+</html>

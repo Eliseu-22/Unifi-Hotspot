@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    text-align: center;
+    /* background-color: #333; */
+    background-color: #000; /* PRETO */
+    /* Removendo imagem de fundo para ficar tudo preto */
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 100;
+    color: #fff;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+}
+
+a, a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-content {
+    padding: 60px 0;
+}
+
+.inner-bg {
+    padding: 60px 0 110px 0;
+}
+
+.form-box {
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-top {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.form-bottom {
+    background: rgba(0,0,0,0.3);
+    padding: 25px;
+    border-radius: 0 0 8px 8px;
+}
+
+.form-control {
+    background: #fff;
+    border: 3px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button.btn, .cadastre-se-btn {
+    background: #f01404;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.btn:hover, .cadastre-se-btn:hover {
+    background: #c01303;
+}
+
+.text-muted {
+    color: #bbb;
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  .top-content {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .form-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .form-top, .form-bottom {
+    padding: 15px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+}

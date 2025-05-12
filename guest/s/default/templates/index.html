@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Portal de Acesso Wi-Fi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/static/images/icone.png">
+  <link rel="stylesheet" href="/static/style.css">
+  </head>
+<body>
+  <div class="top-content">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1><strong>Acesso Wi-Fi</strong> Gratuito</h1>
+            <div class="description">
+              <p style="color: white;">Faça login ou cadastre-se para navegar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top">
+              <div class="form-top-left">
+                <h3>Fazer login</h3>
+              </div>
+              <div class="form-top-right">
+                <img src="/static/images/login-icon.png">
+                </div>
+            </div>
+
+            <div class="form-bottom">
+              <form method="POST" action="/auth" class="login-form">
+                <div class="form-group">
+                  <label class="sr-only" for="username">Email</label>
+                  <input type="text" class="form-control" name="username" id="username" placeholder="Email..." required>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="password">Senha</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Senha..." required>
+                </div>
+                <input type="hidden" name="id" value="{{ mac }}">
+                <input type="hidden" name="ap" value="{{ ap }}">
+                <input type="hidden" name="url" value="{{ url }}">
+                <button type="submit" class="btn">Login</button>
+                <p class="cadastro-btn">
+                  <a href="/register"><strong>Cadastre-se</strong></a> |
+                  <a href="/forgot"><strong>Esqueceu a senha?</strong></a>
+                </p>
+              </form>
+            </div>
+
+            <div class="form-bottom" style="margin-top: 20px;">
+              <h3 style="color: #fff;">Ou utilize seu voucher</h3>
+              <form method="POST" action="/voucher_auth">
+                <div class="form-group">
+                  <label class="sr-only" for="voucher_code">Voucher</label>
+                  <input type="text" class="form-control" name="voucher_code" id="voucher_code" placeholder="Digite seu voucher..." required>
+                </div>
+                <input type="hidden" name="id" value="{{ mac }}">
+                <input type="hidden" name="ap" value="{{ ap }}">
+                <input type="hidden" name="url" value="{{ url }}">
+                <button type="submit" class="btn">Usar Voucher</button>
+              </form>
+            </div>
+
+            <div class="text-muted single-line">
+              <br>
+              <p>Desenvolvido para projetos de código aberto.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
